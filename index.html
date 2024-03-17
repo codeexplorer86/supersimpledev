@@ -11,7 +11,7 @@
 {
 background-color: lightblue;
 style="text-align:center;"
-padding: 10px;
+padding: 15px;
 }
 </style>
 
@@ -21,6 +21,16 @@ padding: 10px;
 <div id="container">
 <br>
 <br>
+<label> WATER BILL CALCULATION : </label> <br> <br><br>
+  <label for="Common water reading">Common Meter :</label>
+  <input type="text" id="COMMON_METER" value=0 /> <br> <br>
+  <label for="Common water reading">Tanker Cost</label>
+  <input type="text" id="COMMON_METER" value=0 /> <br> <br>
+
+
+
+<label> LAST MONTH READING : </label> <br>
+
   <label>Flat 001 : </label> 
   <label for="OLDM1001">Meter 1:</label>
   <input type="text" id="OLDM1001" value=0 /> 
@@ -110,49 +120,175 @@ padding: 10px;
   <label for="OLDM3401">Meter 3:</label>
   <input type="text" id="OLDM3401" value=0 /> <br> 
 
-  <label>Flat 002 :</label> 
+  <label>Flat 402 :</label> 
   <label for="OLDM1402">Meter 1:</label>
   <input type="text" id="OLDM1402" value=0 /> 
 
-  <label for="OLDM2302">Meter 2:</label>
+  <label for="OLDM2402">Meter 2:</label>
   <input type="text" id="OLDM2402" value=0 /> 
 
   <label for="OLDM3402">Meter 3:</label>
-  <input type="text" id="OLDM3402" value=0 /> <br> 
+  <input type="text" id="OLDM3402" value=0 /> <br> <br> <br>
+
+ <label>Flat 001 : </label> 
+  <label for="NEWM1001">Meter 1:</label>
+  <input type="text" id="NEWM1001" value=0 /> 
+
+  <label for="NEWM2001">Meter 2:</label>
+  <input type="text" id="NEWM2001" value=0 /> 
+
+  <label for="NEWM3001">Meter 3:</label>
+  <input type="text" id="NEWM3001" value=0 /> <br> 
+
+  <label>Flat 002 :</label> 
+  <label for="NEWM1002">Meter 1:</label>
+  <input type="text" id="NEWM1002" value=0 /> 
+
+  <label for="NEWM2002">Meter 2:</label>
+  <input type="text" id="NEWM2002" value=0 /> 
+
+  <label for="NEWM3002">Meter 3:</label>
+  <input type="text" id="NEWM3002" value=0 /> <br> 
+
+  <label>Flat 101 : </label> 
+  <label for="NEWM1101">Meter 1:</label>
+  <input type="text" id="NEWM1101" value=0 /> 
+
+  <label for="NEWM2101">Meter 2:</label>
+  <input type="text" id="NEWM2101" value=0 /> 
+
+  <label for="NEWM3101">Meter 3:</label>
+  <input type="text" id="NEWM3101" value=0 /> <br> 
+
+  <label>Flat 102 :</label> 
+  <label for="NEWM1102">Meter 1:</label>
+  <input type="text" id="NEWM1102" value=0 /> 
+
+  <label for="NEWM2102">Meter 2:</label>
+  <input type="text" id="NEWM2102" value=0 /> 
+
+  <label for="NEWM3102">Meter 3:</label>
+  <input type="text" id="NEWM3102" value=0 /> <br> 
+
+  <label>Flat 201 : </label> 
+  <label for="NEWM1201">Meter 1:</label>
+  <input type="text" id="NEWM1201" value=0 /> 
+
+  <label for="NEWM2201">Meter 2:</label>
+  <input type="text" id="NEWM2201" value=0 /> 
+
+  <label for="NEWM3201">Meter 3:</label>
+  <input type="text" id="NEWM3201" value=0 /> <br> 
+
+  <label>Flat 202 :</label> 
+  <label for="NEWM1202">Meter 1:</label>
+  <input type="text" id="NEWM1202" value=0 /> 
+
+  <label for="NEWM2202">Meter 2:</label>
+  <input type="text" id="NEWM2202" value=0 /> 
+  <label for="NEWM3202">Meter 3:</label>
+  <input type="text" id="NEWM3202" value=0 /> <br> 
+
+  <label>Flat 301 : </label> 
+  <label for="NEWM1301">Meter 1:</label>
+  <input type="text" id="NEWM1301" value=0 /> 
+
+  <label for="NEWM2301">Meter 2:</label>
+  <input type="text" id="NEWM2301" value=0 /> 
+
+  <label for="NEWM3301">Meter 3:</label>
+  <input type="text" id="NEWM3301" value=0 /> <br> 
+
+  <label>Flat 302 :</label> 
+  <label for="NEWM1303">Meter 1:</label>
+  <input type="text" id="NEWM1302" value=0 /> 
+
+  <label for="NEWM2302">Meter 2:</label>
+  <input type="text" id="NEWM2302" value=0 /> 
+
+  <label for="NEWM3202">Meter 3:</label>
+  <input type="text" id="NEWM3302" value=0 /> <br> 
+
+  <label>Flat 401 : </label> 
+  <label for="NEWM1401">Meter 1:</label>
+  <input type="text" id="NEWM1401" value=0 /> 
+
+  <label for="NEWM2401">Meter 2:</label>
+  <input type="text" id="NEWM2401" value=0 /> 
+
+  <label for="NEWM3401">Meter 3:</label>
+  <input type="text" id="NEWM3401" value=0 /> <br> 
+
+  <label>Flat 402 :</label> 
+  <label for="NEWM1402">Meter 1:</label>
+  <input type="text" id="NEWM1402" value=0 /> 
+
+  <label for="NEWM2402">Meter 2:</label>
+  <input type="text" id="NEWM2402" value=0 /> 
+
+  <label for="NEWM3402">Meter 3:</label>
+  <input type="text" id="NEWM3402" value=0 /> <br> <br> <br> 
 
 
   <input type="button" value="Add" onclick="add()" /> 
   <input type="button" value="Reset" onclick="reset()" /> 
  <input type="button" value="test" onclick="test()" />  <br> <br>
 
-  <label for="OLD001total">001 old total</label>
-  <input type="text" id="OLD001total" value=0 disabled /> <br>
-  <label for="OLD001total">002 old total</label>
-  <input type="text" id="OLD002total" value=0 disabled /> <br>
-  <label for="OLD001total">101 old total</label>
-  <input type="text" id="OLD101total" value=0 disabled /> <br> 
-  <label for="OLD001total">102 old total</label>
-  <input type="text" id="OLD102total" value=0 disabled /> <br>
-  <label for="OLD001total">201 old total</label>
-  <input type="text" id="OLD201total" value=0 disabled /> <br>
-  <label for="OLD001total">202 old total</label>
-  <input type="text" id="OLD202total" value=0 disabled /> <br>
-  <label for="OLD001total">301 old total</label>
-  <input type="text" id="OLD301total" value=0 disabled /> <br> 
-  <label for="OLD001total">302 old total</label>
-  <input type="text" id="OLD302total" value=0 disabled /> <br>
-  <label for="OLD001total">401 old total</label>
-  <input type="text" id="OLD401total" value=0 disabled /> <br>
-  <label for="OLD001total">402 old total</label>
-  <input type="text" id="OLD402total" value=0 disabled /> <br>
+  <label for="OLD001total">001 OLD</label>
+  <input type="text" id="OLD001total" value=0 disabled /> 
+  <label for="NEW001total">001 NEW</label>
+  <input type="text" id="NEW001total" value=0 disabled /> 
 
 
+<br>
+  <label for="OLD001total">002 OLD</label>
+  <input type="text" id="OLD002total" value=0 disabled /> 
+  <label for="NEW002total">002 NEW</label>
+  <input type="text" id="NEW002total" value=0 disabled /> 
 
+<br>
+  <label for="OLD101total">101 OLD</label>
+  <input type="text" id="OLD101total" value=0 disabled /> 
+  <label for="NEW101total">101 NEW</label>
+  <input type="text" id="NEW101total" value=0 disabled /> 
+<br> 
+  <label for="OLD102total">102 OLD</label>
+  <input type="text" id="OLD102total" value=0 disabled /> 
+  <label for="NEW102total">102 NEW</label>
+  <input type="text" id="NEW102total" value=0 disabled /> 
+<br>
+  <label for="OLD201total">201 OLD</label>
+  <input type="text" id="OLD201total" value=0 disabled /> 
+  <label for="NEW201total">201 NEW</label>
+  <input type="text" id="NEW201total" value=0 disabled /> 
+<br>
+  <label for="OLD202total">202 OLD</label>
+  <input type="text" id="OLD202total" value=0 disabled /> 
+  <label for="NEW202total">202 NEW</label>
+  <input type="text" id="NEW202total" value=0 disabled /> 
+<br>
+  <label for="OLD301total">301 OLD</label>
+  <input type="text" id="OLD301total" value=0 disabled /> 
+  <label for="NEW301total">301 NEW</label>
+  <input type="text" id="NEW301total" value=0 disabled /> 
+<br> 
+  <label for="OLD302total">302 OLD</label>
+  <input type="text" id="OLD302total" value=0 disabled /> 
+  <label for="NEW302total">302 NEW</label>
+  <input type="text" id="NEW302total" value=0 disabled /> 
+<br>
+  <label for="OLD401total">401 OLD</label>
+  <input type="text" id="OLD401total" value=0 disabled /> 
+  <label for="NEW401total">401 NEW </label>
+  <input type="text" id="NEW401total" value=0 disabled /> 
+<br>
+  <label for="OLD402total">402 OLD</label>
+  <input type="text" id="OLD402total" value=0 disabled /> 
+  <label for="NEW402total">402 NEW</label>
+  <input type="text" id="NEW402total" value=0 disabled /> 
 <br><br>
 
 </div>
-
-
 <script type="text/javascript">
 function reset()
 {
@@ -209,6 +345,58 @@ document.getElementById("OLD302total").value=0;
 document.getElementById("OLD401total").value=0;
 document.getElementById("OLD402total").value=0;
 
+document.getElementById("NEWM1001").value=0;
+document.getElementById("NEWM2001").value=0;
+document.getElementById("NEWM3001").value=0;
+
+document.getElementById("NEWM1002").value=0;
+document.getElementById("NEWM2002").value=0;
+document.getElementById("NEWM3002").value=0;
+
+document.getElementById("NEWM1101").value=0;
+document.getElementById("NEWM2101").value=0;
+document.getElementById("NEWM3101").value=0;
+
+document.getElementById("NEWM1102").value=0;
+document.getElementById("NEWM2102").value=0;
+document.getElementById("NEWM3102").value=0;
+
+document.getElementById("NEWM1201").value=0;
+document.getElementById("NEWM2201").value=0;
+document.getElementById("NEWM3201").value=0;
+
+document.getElementById("NEWM1202").value=0;
+document.getElementById("NEWM2202").value=0;
+document.getElementById("NEWM3202").value=0;
+
+document.getElementById("NEWM1301").value=0;
+document.getElementById("NEWM2301").value=0;
+document.getElementById("NEWM3301").value=0;
+
+document.getElementById("NEWM1302").value=0;
+document.getElementById("NEWM2302").value=0;
+document.getElementById("NEWM3302").value=0;
+
+document.getElementById("NEWM1401").value=0;
+document.getElementById("NEWM2401").value=0;
+document.getElementById("NEWM3401").value=0;
+
+document.getElementById("NEWM1402").value=0;
+document.getElementById("NEWM2402").value=0;
+document.getElementById("NEWM3402").value=0;
+
+
+document.getElementById("NEW001total").value=0;
+document.getElementById("NEW002total").value=0;
+document.getElementById("NEW101total").value=0;
+document.getElementById("NEW102total").value=0;
+document.getElementById("NEW201total").value=0;
+document.getElementById("NEW202total").value=0;
+document.getElementById("NEW301total").value=0;
+document.getElementById("NEW302total").value=0;
+document.getElementById("NEW401total").value=0;
+document.getElementById("NEW402total").value=0;
+
 }
 
 function test()
@@ -254,7 +442,47 @@ document.getElementById("OLDM1402").value=100;
 document.getElementById("OLDM2402").value=100;
 document.getElementById("OLDM3402").value=100;
 
-document.getElementById("OLD001total").value=300;
+document.getElementById("NEWM1001").value=100;
+document.getElementById("NEWM2001").value=100;
+document.getElementById("NEWM3001").value=100;
+
+document.getElementById("NEWM1002").value=100;
+document.getElementById("NEWM2002").value=100;
+document.getElementById("NEWM3002").value=100;
+
+document.getElementById("NEWM1101").value=100;
+document.getElementById("NEWM2101").value=100;
+document.getElementById("NEWM3101").value=100;
+
+document.getElementById("NEWM1102").value=100;
+document.getElementById("NEWM2102").value=100;
+document.getElementById("NEWM3102").value=100;
+
+document.getElementById("NEWM1201").value=100;
+document.getElementById("NEWM2201").value=100;
+document.getElementById("NEWM3201").value=100;
+
+document.getElementById("NEWM1202").value=100;
+document.getElementById("NEWM2202").value=100;
+document.getElementById("NEWM3202").value=100;
+
+document.getElementById("NEWM1301").value=100;
+document.getElementById("NEWM2301").value=100;
+document.getElementById("NEWM3301").value=100;
+
+document.getElementById("NEWM1302").value=100;
+document.getElementById("NEWM2302").value=100;
+document.getElementById("NEWM3302").value=100;
+
+document.getElementById("NEWM1401").value=100;
+document.getElementById("NEWM2401").value=100;
+document.getElementById("NEWM3401").value=100;
+
+document.getElementById("NEWM1402").value=100;
+document.getElementById("NEWM2402").value=100;
+document.getElementById("NEWM3402").value=100;
+
+/*document.getElementById("OLD001total").value=300;
 document.getElementById("OLD002total").value=300;
 document.getElementById("OLD101total").value=300;
 document.getElementById("OLD102total").value=300;
@@ -263,7 +491,7 @@ document.getElementById("OLD202total").value=300;
 document.getElementById("OLD301total").value=300;
 document.getElementById("OLD302total").value=300;
 document.getElementById("OLD401total").value=300;
-document.getElementById("OLD402total").value=300;
+document.getElementById("OLD402total").value=300;*/
 
 }
 
@@ -274,8 +502,138 @@ OLDM1001= Number(document.getElementById("OLDM1001").value);
 OLDM2001= Number(document.getElementById("OLDM2001").value);
 OLDM3001= Number(document.getElementById("OLDM2001").value);
 var OLD001total=OLDM1001 + OLDM2001 + OLDM3001;
-//alert(OLD001total);
 document.getElementById("OLD001total").value= OLD001total
+
+OLDM1002= Number(document.getElementById("OLDM1002").value);
+OLDM2002= Number(document.getElementById("OLDM2002").value);
+OLDM3002= Number(document.getElementById("OLDM3002").value);
+var OLD002total=OLDM1002 + OLDM2002 + OLDM3002;
+document.getElementById("OLD002total").value= OLD002total
+
+OLDM1101= Number(document.getElementById("OLDM1101").value);
+OLDM2101= Number(document.getElementById("OLDM2101").value);
+OLDM3101= Number(document.getElementById("OLDM3101").value);
+var OLD101total=OLDM1101 + OLDM2101 + OLDM3101;
+document.getElementById("OLD101total").value= OLD101total
+
+
+OLDM1102= Number(document.getElementById("OLDM1102").value);
+OLDM2102= Number(document.getElementById("OLDM2102").value);
+OLDM3102= Number(document.getElementById("OLDM3102").value);
+var OLD102total=OLDM1102 + OLDM2102 + OLDM3102;
+document.getElementById("OLD102total").value= OLD102total
+
+OLDM1201= Number(document.getElementById("OLDM1201").value);
+OLDM2201= Number(document.getElementById("OLDM2201").value);
+OLDM3201= Number(document.getElementById("OLDM3201").value);
+var OLD201total=OLDM1201 + OLDM2201 + OLDM3201;
+document.getElementById("OLD201total").value= OLD201total
+
+OLDM1202= Number(document.getElementById("OLDM1202").value);
+OLDM2202= Number(document.getElementById("OLDM2202").value);
+OLDM3202= Number(document.getElementById("OLDM3202").value);
+var OLD202total=OLDM1202 + OLDM2202 + OLDM3202;
+document.getElementById("OLD202total").value= OLD202total
+
+OLDM1301= Number(document.getElementById("OLDM1301").value);
+OLDM2301= Number(document.getElementById("OLDM2301").value);
+OLDM3301= Number(document.getElementById("OLDM3301").value);
+var OLD301total=OLDM1301 + OLDM2301 + OLDM3301;
+document.getElementById("OLD301total").value= OLD301total
+
+OLDM1302= Number(document.getElementById("OLDM1302").value);
+OLDM2302= Number(document.getElementById("OLDM2302").value);
+OLDM3302= Number(document.getElementById("OLDM3302").value);
+var OLD302total=OLDM1302 + OLDM2302 + OLDM3302;
+document.getElementById("OLD302total").value= OLD302total
+
+OLDM1401= Number(document.getElementById("OLDM1401").value);
+OLDM2401= Number(document.getElementById("OLDM2401").value);
+OLDM3401= Number(document.getElementById("OLDM3401").value);
+var OLD401total=OLDM1401 + OLDM2401 + OLDM3401;
+document.getElementById("OLD401total").value= OLD401total
+
+OLDM1402= Number(document.getElementById("OLDM1402").value);
+OLDM2402= Number(document.getElementById("OLDM2402").value);
+OLDM3402= Number(document.getElementById("OLDM3402").value);
+var OLD402total=OLDM1402 + OLDM2402 + OLDM3402;
+document.getElementById("OLD402total").value= OLD402total
+
+
+
+
+
+NEWM1001= Number(document.getElementById("NEWM1001").value);
+NEWM2001= Number(document.getElementById("NEWM2001").value);
+NEWM3001= Number(document.getElementById("NEWM2001").value);
+var NEW001total=NEWM1001 + NEWM2001 + NEWM3001;
+document.getElementById("NEW001total").value= NEW001total
+
+NEWM1002= Number(document.getElementById("NEWM1002").value);
+NEWM2002= Number(document.getElementById("NEWM2002").value);
+NEWM3002= Number(document.getElementById("NEWM3002").value);
+var NEW002total=NEWM1002 + NEWM2002 + NEWM3002;
+document.getElementById("NEW002total").value= NEW002total
+
+NEWM1101= Number(document.getElementById("NEWM1101").value);
+NEWM2101= Number(document.getElementById("NEWM2101").value);
+NEWM3101= Number(document.getElementById("NEWM3101").value);
+var NEW101total=NEWM1101 + NEWM2101 + NEWM3101;
+document.getElementById("NEW101total").value= NEW101total
+
+
+NEWM1102= Number(document.getElementById("NEWM1102").value);
+NEWM2102= Number(document.getElementById("NEWM2102").value);
+NEWM3102= Number(document.getElementById("NEWM3102").value);
+var NEW102total=NEWM1102 + NEWM2102 + NEWM3102;
+document.getElementById("NEW102total").value= NEW102total
+
+NEWM1201= Number(document.getElementById("NEWM1201").value);
+NEWM2201= Number(document.getElementById("NEWM2201").value);
+NEWM3201= Number(document.getElementById("NEWM3201").value);
+var NEW201total=NEWM1201 + NEWM2201 + NEWM3201;
+document.getElementById("NEW201total").value= NEW201total
+
+NEWM1202= Number(document.getElementById("NEWM1202").value);
+NEWM2202= Number(document.getElementById("NEWM2202").value);
+NEWM3202= Number(document.getElementById("NEWM3202").value);
+var NEW202total=NEWM1202 + NEWM2202 + NEWM3202;
+document.getElementById("NEW202total").value= NEW202total
+
+NEWM1301= Number(document.getElementById("NEWM1301").value);
+NEWM2301= Number(document.getElementById("NEWM2301").value);
+NEWM3301= Number(document.getElementById("NEWM3301").value);
+var NEW301total=NEWM1301 + NEWM2301 + NEWM3301;
+document.getElementById("NEW301total").value= NEW301total
+
+NEWM1302= Number(document.getElementById("NEWM1302").value);
+NEWM2302= Number(document.getElementById("NEWM2302").value);
+NEWM3302= Number(document.getElementById("NEWM3302").value);
+var NEW302total=NEWM1302 + NEWM2302 + NEWM3302;
+document.getElementById("NEW302total").value= NEW302total
+
+NEWM1401= Number(document.getElementById("NEWM1401").value);
+NEWM2401= Number(document.getElementById("NEWM2401").value);
+NEWM3401= Number(document.getElementById("NEWM3401").value);
+var NEW401total=NEWM1401 + NEWM2401 + NEWM3401;
+document.getElementById("NEW401total").value= NEW401total
+
+NEWM1402= Number(document.getElementById("NEWM1402").value);
+NEWM2402= Number(document.getElementById("NEWM2402").value);
+NEWM3402= Number(document.getElementById("NEWM3402").value);
+var NEW402total=NEWM1402 + NEWM2402 + NEWM3402;
+document.getElementById("NEW402total").value= NEW402total
+
+
+
+
+/*alert(Number(document.getElementById("OLDM1001").value));
+alert(Number(document.getElementById("OLDM2001").value));
+alert(Number(document.getElementById("OLDM3001").value));
+alert(Number(document.getElementById("OLD001total").value));
+*/
+
+
 }
 
 </script>
