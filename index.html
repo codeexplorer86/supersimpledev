@@ -1,75 +1,67 @@
-<form>
-<label>Enter all three Meter readings for Previous month:</label><br>
-<label>Flat 001</label><br>
-  <label for="M1001">Meter 1:</label>
-  <input type="integer" id="M1001" name="M1001">
-  <label for="M2001">Meter 2:</label>
-  <input type="integer" id="M2001" name="M2001">
-  <label for="M3001">Meter 3:</label>
-  <input type="number" id="M3001" name="M3001"><br>
-<label>Flat 002</label><br>
-  <label for="M1002">Meter 1:</label>
-  <input type="integer" id="M1002" name="M1002">
-  <label for="M2001">Meter 2:</label>
-  <input type="integer" id="M2002" name="M2002">
-  <label for="M3001">Meter 3:</label>
-  <input type="integer" id="M3002" name="M3002"><br>
-<label>Flat 101</label><br>
-  <label for="M1101">Meter 1:</label>
-  <input type="integer" id="M1101" name="M1101">
-  <label for="M2101">Meter 2:</label>
-  <input type="integer" id="M2101" name="M2101">
-  <label for="M3101">Meter 3:</label>
-  <input type="integer" id="M3101" name="M3101"><br>
-<label>Flat 102</label><br>
-  <label for="M1102">Meter 1:</label>
-  <input type="integer" id="M1102" name="M1102">
-  <label for="M2102">Meter 2:</label>
-  <input type="integer" id="M2102" name="M2102">
-  <label for="M3102">Meter 3:</label>
-  <input type="integer" id="M3102" name="M3102"><br>
-<label>Flat 201</label><br>
-  <label for="M1201">Meter 1:</label>
-  <input type="integer" id="M1201" name="M1201">
-  <label for="M2201">Meter 2:</label>
-  <input type="integer" id="M2201" name="M2201">
-  <label for="M3201">Meter 3:</label>
-  <input type="integer" id="M3201" name="M3201"><br>
-<label>Flat 202</label><br>
-  <label for="M1202">Meter 1:</label>
-  <input type="integer" id="M1202" name="M1202">
-  <label for="M2202">Meter 2:</label>
-  <input type="integer" id="M2202" name="M2202">
-  <label for="M3202">Meter 3:</label>
-  <input type="integer" id="M3202" name="M3202"><br>
-<label>Flat 301</label><br>
-  <label for="M1301">Meter 1:</label>
-  <input type="integer" id="M1301" name="M1301">
-  <label for="M2301">Meter 2:</label>
-  <input type="integer" id="M2301" name="M2301">
-  <label for="M3301">Meter 3:</label>
-  <input type="integer" id="M3301" name="M3301"><br>
-<label>Flat 302</label><br>
-  <label for="M1302">Meter 1:</label>
-  <input type="integer" id="M1302" name="M1302">
-  <label for="M2302">Meter 2:</label>
-  <input type="integer" id="M2302" name="M2302">
-  <label for="M3302">Meter 3:</label>
-  <input type="integer" id="M3302" name="M3302"><br>
-<label>Flat 401</label><br>
-  <label for="M1401">Meter 1:</label>
-  <input type="integer" id="M1401" name="M1401">
-  <label for="M2401">Meter 2:</label>
-  <input type="integer" id="M2401" name="M2401">
-  <label for="M3401">Meter 3:</label>
-  <input type="integer" id="M3401" name="M3401"><br>
-<label>Flat 402</label><br>
-  <label for="M1402">Meter 1:</label>
-  <input type="integer" id="M1402" name="M1402">
-  <label for="M2402">Meter 2:</label>
-  <input type="integer" id="M2402" name="M2402">
-  <label for="M3402">Meter 3:</label>
-  <input type="integer" id="M3402" name="M3402"><br>
-</form>
+<!doctype html>
+<html>
+<head>
+  
+<meta charset="utf-8">
+<title>Add Two Numbers</title>
+
+<style type="text/css">
+#container
+{
+background-color: lightblue;
+padding: 10px
+}
+</style>
+
+</head>
+
+<body>
+<div id="container">
+<br>
+<br>
+  <label>Flat 011</label> <br>
+  <label for="OLDM1001">Meter 1:</label>
+  <input type="text" id="OLDM1001" value=0 />
+
+  <label for="OLDM2001">Meter 2:</label>
+  <input type="text" id="OLDM2001" value=0 />
+
+  <label for="OLDM3001">Meter 3:</label>
+  <input type="text" id="OLDM3001" value=0 /> <br> <br>
+
+  <input type="button" value="Add" onclick="add()" /> 
+  <input type="button" value="Reset" onclick="reset()" />  <br> <br>
+
+  <label for="OLD001total">OLD001total</label>
+  <input type="text" id="OLD001total" value=0 disabled /> <br> <br>
+
+<br><br>
+
+</div>
 
 
+<script type="text/javascript">
+function reset()
+{
+document.getElementById("OLDM1001").value=0;
+document.getElementById("OLDM2001").value=0;
+document.getElementById("OLDM2001").value=0;
+}
+
+function add()
+{
+OLDM1001= Number(document.getElementById("OLDM1001").value);
+OLDM2001= Number(document.getElementById("OLDM2001").value);
+OLDM3001= Number(document.getElementById("OLDM2001").value);
+var OLD001total=OLDM1001 + OLDM2001 + OLDM3001;
+//alert(OLD001total);
+document.getElementById("OLD001total").value= OLD001total
+}
+
+</script>
+
+
+
+</body>
+
+</html>
