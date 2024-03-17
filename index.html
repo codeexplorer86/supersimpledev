@@ -22,10 +22,10 @@ padding: 15px;
 <br>
 <br>
 <label> WATER BILL CALCULATION : </label> <br> <br><br>
-  <label for="Common water reading">Common Meter :</label>
+  <label for="COMMON_METER">Common Meter :</label>
   <input type="text" id="COMMON_METER" value=0 /> <br> <br>
-  <label for="Common water reading">Tanker Cost</label>
-  <input type="text" id="COMMON_METER" value=0 /> <br> <br>
+  <label for="TANKER_COST">Tanker Cost</label>
+  <input type="text" id="TANKER_COST" value=0 /> <br> <br>
 
 
 
@@ -234,10 +234,10 @@ padding: 15px;
   <input type="button" value="Reset" onclick="reset()" /> 
  <input type="button" value="test" onclick="test()" />  <br> <br>
 
-  <label for="ComCOMMON_METER">Total Usage:</label>
-  <input type="text" id="COMMON_METER" value=0 /> <br> <br> 
-  <label for="perlitrecost">Cost Per litre :</label>
-  <input type="text" id="perlitrecost" value=0 /> <br> <br> 
+  <label for="TOTAL_USAGE">Total Usage:</label>
+  <input type="text" id="TOTAL_USAGE" value=0 /> <br> <br> 
+  <label for="COST_PER_LITRE">Cost Per litre :</label>
+  <input type="text" id="COST_PER_LITRE" value=0 /> <br> <br> 
  <label for="COMMON_AMOUNT">Common Amount:</label>
   <input type="text" id="COMMON_AMOUNT" value=0 /> <br> <br> 
 
@@ -430,6 +430,9 @@ document.getElementById("NEW402total").value=0;
 function test()
 {
 
+document.getElementById("COMMON_METER").value=100;
+document.getElementById("TANKER_COST").value=10000;
+
 document.getElementById("OLDM1001").value=100;
 document.getElementById("OLDM2001").value=100;
 document.getElementById("OLDM3001").value=100;
@@ -470,56 +473,46 @@ document.getElementById("OLDM1402").value=100;
 document.getElementById("OLDM2402").value=100;
 document.getElementById("OLDM3402").value=100;
 
-document.getElementById("NEWM1001").value=100;
-document.getElementById("NEWM2001").value=100;
-document.getElementById("NEWM3001").value=100;
+document.getElementById("NEWM1001").value=200;
+document.getElementById("NEWM2001").value=200;
+document.getElementById("NEWM3001").value=200;
 
-document.getElementById("NEWM1002").value=100;
-document.getElementById("NEWM2002").value=100;
-document.getElementById("NEWM3002").value=100;
+document.getElementById("NEWM1002").value=200;
+document.getElementById("NEWM2002").value=200;
+document.getElementById("NEWM3002").value=200;
 
-document.getElementById("NEWM1101").value=100;
-document.getElementById("NEWM2101").value=100;
-document.getElementById("NEWM3101").value=100;
+document.getElementById("NEWM1101").value=200;
+document.getElementById("NEWM2101").value=200;
+document.getElementById("NEWM3101").value=200;
 
-document.getElementById("NEWM1102").value=100;
-document.getElementById("NEWM2102").value=100;
-document.getElementById("NEWM3102").value=100;
+document.getElementById("NEWM1102").value=200;
+document.getElementById("NEWM2102").value=200;
+document.getElementById("NEWM3102").value=200;
 
-document.getElementById("NEWM1201").value=100;
-document.getElementById("NEWM2201").value=100;
-document.getElementById("NEWM3201").value=100;
+document.getElementById("NEWM1201").value=200;
+document.getElementById("NEWM2201").value=200;
+document.getElementById("NEWM3201").value=200;
 
-document.getElementById("NEWM1202").value=100;
-document.getElementById("NEWM2202").value=100;
-document.getElementById("NEWM3202").value=100;
+document.getElementById("NEWM1202").value=200;
+document.getElementById("NEWM2202").value=200;
+document.getElementById("NEWM3202").value=200;
 
-document.getElementById("NEWM1301").value=100;
-document.getElementById("NEWM2301").value=100;
-document.getElementById("NEWM3301").value=100;
+document.getElementById("NEWM1301").value=200;
+document.getElementById("NEWM2301").value=200;
+document.getElementById("NEWM3301").value=200;
 
-document.getElementById("NEWM1302").value=100;
-document.getElementById("NEWM2302").value=100;
-document.getElementById("NEWM3302").value=100;
+document.getElementById("NEWM1302").value=200;
+document.getElementById("NEWM2302").value=200;
+document.getElementById("NEWM3302").value=200;
 
-document.getElementById("NEWM1401").value=100;
-document.getElementById("NEWM2401").value=100;
-document.getElementById("NEWM3401").value=100;
+document.getElementById("NEWM1401").value=200;
+document.getElementById("NEWM2401").value=200;
+document.getElementById("NEWM3401").value=200;
 
-document.getElementById("NEWM1402").value=100;
-document.getElementById("NEWM2402").value=100;
-document.getElementById("NEWM3402").value=100;
+document.getElementById("NEWM1402").value=200;
+document.getElementById("NEWM2402").value=200;
+document.getElementById("NEWM3402").value=200;
 
-/*document.getElementById("OLD001total").value=300;
-document.getElementById("OLD002total").value=300;
-document.getElementById("OLD101total").value=300;
-document.getElementById("OLD102total").value=300;
-document.getElementById("OLD201total").value=300;
-document.getElementById("OLD202total").value=300;
-document.getElementById("OLD301total").value=300;
-document.getElementById("OLD302total").value=300;
-document.getElementById("OLD401total").value=300;
-document.getElementById("OLD402total").value=300;*/
 
 }
 
@@ -587,13 +580,11 @@ OLDM3402= Number(document.getElementById("OLDM3402").value);
 var OLD402total=OLDM1402 + OLDM2402 + OLDM3402;
 document.getElementById("OLD402total").value= OLD402total
 
-
-
-
+/*New meter */
 
 NEWM1001= Number(document.getElementById("NEWM1001").value);
 NEWM2001= Number(document.getElementById("NEWM2001").value);
-NEWM3001= Number(document.getElementById("NEWM2001").value);
+NEWM3001= Number(document.getElementById("NEWM3001").value);
 var NEW001total=NEWM1001 + NEWM2001 + NEWM3001;
 document.getElementById("NEW001total").value= NEW001total
 
@@ -653,6 +644,56 @@ var NEW402total=NEWM1402 + NEWM2402 + NEWM3402;
 document.getElementById("NEW402total").value= NEW402total
 
 
+/* Total usage*/
+
+
+
+
+
+var TOTAL_USAGE=(NEW001total-OLD001total)+ (NEW002total-OLD002total)+(NEW101total-OLD101total)+(NEW102total-OLD102total)+(NEW201total-OLD201total)+(NEW202total-OLD202total)+(NEW301total-OLD301total)+(NEW302total-OLD302total)+(NEW401total-OLD401total)+(NEW402total-OLD402total);
+document.getElementById("TOTAL_USAGE").value= TOTAL_USAGE
+
+TANKER_COST=Number(document.getElementById("TANKER_COST").value);
+COMMON_METER=Number(document.getElementById("COMMON_METER").value);
+
+var COST_PER_LITRE=(TANKER_COST/(TOTAL_USAGE+COMMON_METER));
+document.getElementById("COST_PER_LITRE").value= COST_PER_LITRE
+
+var COMMON_AMOUNT=(COMMON_METER*COST_PER_LITRE);
+document.getElementById("COMMON_AMOUNT").value= COMMON_AMOUNT
+
+
+
+
+var BILL001total=(NEW001total-OLD001total) *COST_PER_LITRE;
+document.getElementById("BILL001total").value= BILL001total
+
+var BILL002total=(NEW002total-OLD002total)*COST_PER_LITRE;
+document.getElementById("BILL002total").value= BILL002total
+
+var BILL101total=(NEW101total-OLD101total)*COST_PER_LITRE;
+document.getElementById("BILL101total").value= BILL101total
+
+var BILL102total=(NEW102total-OLD102total)*COST_PER_LITRE;
+document.getElementById("BILL102total").value= BILL102total
+
+var BILL201total=(NEW201total-OLD201total)*COST_PER_LITRE;
+document.getElementById("BILL201total").value= BILL201total
+
+var BILL202total=(NEW202total-OLD202total)*COST_PER_LITRE;
+document.getElementById("BILL202total").value= BILL202total
+
+var BILL301total=(NEW301total-OLD301total)*COST_PER_LITRE;
+document.getElementById("BILL301total").value= BILL301total
+
+var BILL302total=(NEW302total-OLD302total)*COST_PER_LITRE;
+document.getElementById("BILL302total").value= BILL302total
+
+var BILL401total=(NEW401total-OLD401total)*COST_PER_LITRE;
+document.getElementById("BILL401total").value= BILL401total
+
+var BILL402total=(NEW402total-OLD402total)*COST_PER_LITRE;
+document.getElementById("BILL402total").value= BILL402total
 
 
 /*alert(Number(document.getElementById("OLDM1001").value));
